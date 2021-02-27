@@ -5,7 +5,7 @@ import './Product.css';
 
 function Product(props) {
     // console.log(props.product.name);
-    const {name, img, seller, stock} = props.product;
+    const {name, img, seller, stock, price} = props.product;
     return (
         <div className='product'>
             <div className="product-img">
@@ -16,10 +16,11 @@ function Product(props) {
                         name
                     }</h4>
                 <br/>
+                <p>Price: {price}</p>
                 <p><small>by:</small> {seller}</p>
                 <p>Stock: {stock}</p>
 
-                <button className="btn-product" onClick={() => props.handleProduct(props.product)}><FontAwesomeIcon icon={faShoppingCart} />Add to Cart</button>
+                <button className="btn-product" onClick={()=> props.handleProduct(props.product)}><FontAwesomeIcon icon={faShoppingCart} />Add to Cart</button>
                     
             </div>
         </div>
