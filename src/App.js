@@ -1,9 +1,10 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Shop from "./components/Shop/Shop";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NotFound from "./components/NotFound/NotFound";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
+import Review from "./components/Review/Review";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <Shop></Shop>
+          </Route>
+          <Route path="/review">
+            <Review></Review>
           </Route>
           <Route path="/:key">
             <ProductDetails></ProductDetails>
