@@ -11,7 +11,7 @@ const Cart = (props) => {
   for (let i = 0; i < cart.length; i++) {
     // const p = c[i];
 
-    total = total + cart[i].price;
+    total = total + cart[i].price * cart[i].quantity;
   }
   // console.log(total);
 

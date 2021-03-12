@@ -14,7 +14,7 @@ const ReviewItem = (props) => {
   }
   return (
     <>
-      <div className="col-md-4">
+      <div className="col-md-6">
         <div className="card" style={{ width: "100%" }}>
           <img className="card-img-top" src={img} alt="Card image cap" />
           <div className="card-body">
